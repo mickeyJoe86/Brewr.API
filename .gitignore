@@ -1,0 +1,7 @@
+obj/
+bin/
+App_Data
+
+Web.config
+Web.Debug.config
+Web.Release.config

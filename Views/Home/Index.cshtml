@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Brewr | Brew Smarter";
+    Layout = null;
+}
+
+<html ng-app="Brewr">
+<head>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/Angular/Lib")
+    @Scripts.Render("~/Angular/Modules")
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div ng-include="'app/Templates/TopNav.html'"></div>
+            <div ng-include="'app/Templates/SideBar.html'"></div>
+        </nav>
+        <div id="page-wrapper">
+            <div class="row">
+                <div ng-controller="mainController" class="col-lg-12">
+                    <h1 class="page-header">{{ message }}</h1>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    @Scripts.Render("~/Content/js")
+</body>
+</html>
