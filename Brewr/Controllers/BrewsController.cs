@@ -10,6 +10,7 @@ using System.Web.Http.Cors;
 
 namespace Brewr.Controllers
 {
+    [EnableCorsAttribute("http://localhost:56937", "*", "*")]
     public class BrewsController : ApiController
     {
         private readonly BrewRepository _repo = new BrewRepository();

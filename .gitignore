@@ -2,4 +2,9 @@
 
 Brewr.Client/
 
-packages
+packages/
+
+Brewr/bin/
+Brewr/obj/
+Brewr/App_Data
+
